@@ -13,10 +13,8 @@ export const business = {
   tagline: "A little taste of nature.",
   subline: "Coffee, food & a peaceful green escape on NH4, Davanagere.",
   type: "Nursery-cum-Café · Highway Hangout",
-  phone: "+91 99022 88689",
-  phoneHref: "tel:+919902288689",
-  phone2: "+91 63618 00647",
-  phone2Href: "tel:+916361800647",
+  phone: "+91 63618 00647",
+  phoneHref: "tel:+916361800647",
   address: {
     street: "NH4, beside Kisan Bandhu Vevāsāya Nursery",
     landmark: "Opposite Bharat Petroleum",
@@ -63,9 +61,10 @@ export const business = {
     // and the Instagram section will link to it automatically.
     instagram: null as string | null,
   },
-  // Set this to the live domain before deploying (used for
-  // canonical URLs, sitemap and Open Graph).
-  siteUrl: "https://swaada-davanagere.example.com",
+  // Live URL — used for canonical URLs, sitemap and Open Graph.
+  // Currently the GitHub Pages address; change to the custom
+  // domain (e.g. https://swaada.in) when you get one.
+  siteUrl: "https://ladwaneeraj.github.io/Swaada",
 };
 
 export const nav = [

@@ -50,15 +50,9 @@ export default function Footer() {
             </p>
             <p className="flex items-center gap-2.5">
               <Phone className="size-4 shrink-0 text-terracotta" aria-hidden />
-              <span>
-                <a href={business.phoneHref} className="hover:text-gold">
-                  {business.phone}
-                </a>
-                {" · "}
-                <a href={business.phone2Href} className="hover:text-gold">
-                  {business.phone2}
-                </a>
-              </span>
+              <a href={business.phoneHref} className="hover:text-gold">
+                {business.phone}
+              </a>
             </p>
             <p>
               <a

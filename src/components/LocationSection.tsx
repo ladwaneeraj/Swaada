@@ -43,19 +43,12 @@ export default function LocationSection() {
                 <dt className="text-xs font-bold uppercase tracking-[0.2em] text-ink/45">
                   Phone
                 </dt>
-                <dd className="mt-1 space-x-3">
+                <dd className="mt-1">
                   <a
                     href={business.phoneHref}
                     className="text-ink/80 underline-offset-4 hover:underline"
                   >
                     {business.phone}
-                  </a>
-                  <span className="text-ink/30">·</span>
-                  <a
-                    href={business.phone2Href}
-                    className="text-ink/80 underline-offset-4 hover:underline"
-                  >
-                    {business.phone2}
                   </a>
                 </dd>
               </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import { menu } from "@/data/swaada";
+import { business, menu } from "@/data/swaada";
 import { useReveal } from "@/lib/useReveal";
 import { Eyebrow, Frame, Words } from "./ui";
 import { LeafMark } from "./Botanical";
@@ -72,8 +72,8 @@ export default function Food() {
         <p className="mt-10 text-center text-sm text-ink/45" data-reveal>
           Menu highlights — ask at the counter for today&apos;s full menu and
           prices, or call{" "}
-          <a href="tel:+919902288689" className="text-terracotta underline underline-offset-2">
-            +91 99022 88689
+          <a href={business.phoneHref} className="text-terracotta underline underline-offset-2">
+            {business.phone}
           </a>
           .
         </p>
