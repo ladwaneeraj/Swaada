@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     siteName: business.name,
     locale: "en_IN",
     type: "website",
-    images: [{ url: `${business.siteUrl}/images/hero.jpg`, width: 2048, height: 1152, alt: "Swaada nursery café, Davanagere" }],
+    images: [{ url: `${business.siteUrl}/images/hero.svg`, width: 2048, height: 1152, alt: "Swaada nursery café, Davanagere" }],
   },
   twitter: {
     card: "summary_large_image",

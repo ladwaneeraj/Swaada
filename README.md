@@ -7,7 +7,7 @@ Tailwind CSS v4, GSAP + ScrollTrigger, Lenis and Lucide icons.
 ## Run it
 
 ```bash
-npm install      # also downloads the site images
+npm install
 npm run dev      # http://localhost:3000
 npm run build    # static export into ./out
 ```
@@ -61,13 +61,11 @@ Before deploying, set `business.siteUrl` to the real domain
 
 ## Images
 
-Photography is AI-generated to match the nursery-café concept and
-downloads automatically on `npm install` (or `npm run images`) via
-`scripts/fetch-images.mjs`, which also resizes and converts to
-optimized JPG. See `public/images/README.md` for the full slot map.
-Replace any image with a real photo of Swaada by dropping a file
-with the same name into `public/images` — the script never
-overwrites existing files.
+The site uses botanical SVG artwork in the brand palette, stored in
+`public/images`. To use real photos of Swaada instead, drop them in
+that folder and update the paths in `src/data/swaada.ts` — see
+`public/images/README.md` for the slot map.
+
 
 ## Accessibility & motion
 

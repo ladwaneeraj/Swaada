@@ -94,43 +94,43 @@ export const menu: MenuCategory[] = [
   {
     title: "Pizza",
     blurb: "Café-style pizzas, made to order.",
-    image: "/images/food-pizza.jpg",
+    image: "/images/food-pizza.svg",
     items: [],
   },
   {
     title: "Pasta",
     blurb: "Italian-inspired comfort on a plate.",
-    image: "/images/food-pasta.jpg",
+    image: "/images/food-pasta.svg",
     items: [],
   },
   {
     title: "Sandwiches",
     blurb: "Grilled, stacked and easy to love.",
-    image: "/images/food-sandwich.jpg",
+    image: "/images/food-sandwich.svg",
     items: [],
   },
   {
     title: "Wraps",
     blurb: "Quick, hearty rolls for the road.",
-    image: "/images/food-wrap.jpg",
+    image: "/images/food-wrap.svg",
     items: [],
   },
   {
     title: "Fast Food",
     blurb: "Familiar café favourites, done well.",
-    image: "/images/food-fastfood.jpg",
+    image: "/images/food-fastfood.svg",
     items: [],
   },
   {
     title: "Beverages",
     blurb: "Coolers and refreshers for the highway heat.",
-    image: "/images/food-beverages.jpg",
+    image: "/images/food-beverages.svg",
     items: [],
   },
   {
     title: "Coffee & Tea",
     blurb: "The reason many people stop here twice.",
-    image: "/images/food-coffee.jpg",
+    image: "/images/food-coffee.svg",
     items: [],
   },
 ];
@@ -170,13 +170,13 @@ export const reviews: Review[] = [];
 
 /** Horizontal "Green Escape" panels */
 export const escape = [
-  { label: "Entrance", image: "/images/escape-entrance.jpg" },
-  { label: "Plants", image: "/images/escape-plants.jpg" },
-  { label: "Seating", image: "/images/escape-seating.jpg" },
-  { label: "Café atmosphere", image: "/images/escape-cafe.jpg" },
-  { label: "Food", image: "/images/escape-food.jpg" },
-  { label: "Coffee", image: "/images/coffee-moment.jpg" },
-  { label: "Evening ambience", image: "/images/escape-evening.jpg" },
+  { label: "Entrance", image: "/images/escape-entrance.svg" },
+  { label: "Plants", image: "/images/escape-plants.svg" },
+  { label: "Seating", image: "/images/escape-seating.svg" },
+  { label: "Café atmosphere", image: "/images/escape-cafe.svg" },
+  { label: "Food", image: "/images/escape-food.svg" },
+  { label: "Coffee", image: "/images/escape-coffee.svg" },
+  { label: "Evening ambience", image: "/images/escape-evening.svg" },
 ];
 
 /** Masonry gallery */
@@ -187,35 +187,35 @@ export type GalleryItem = {
   tall?: boolean;
 };
 export const gallery: GalleryItem[] = [
-  { image: "/images/escape-seating.jpg", category: "Café", alt: "Café seating among plants at Swaada, Davanagere", tall: true },
-  { image: "/images/food-pizza.jpg", category: "Food", alt: "Café food served at Swaada" },
-  { image: "/images/food-coffee.jpg", category: "Coffee", alt: "Coffee served at Swaada café" },
-  { image: "/images/gallery-plants-1.jpg", category: "Plants", alt: "Nursery plants and pots at Swaada", tall: true },
-  { image: "/images/gallery-outdoor-1.jpg", category: "Outdoor", alt: "Outdoor green seating area at Swaada" },
-  { image: "/images/gallery-people-1.jpg", category: "People", alt: "Guests relaxing at Swaada café" },
-  { image: "/images/gallery-evening-1.jpg", category: "Evening", alt: "Evening ambience at Swaada on NH4", tall: true },
-  { image: "/images/escape-plants.jpg", category: "Plants", alt: "Green foliage inside the Swaada nursery café" },
-  { image: "/images/gallery-cafe-2.jpg", category: "Café", alt: "A quiet café corner at Swaada, Davanagere" },
+  { image: "/images/gallery-cafe-1.svg", category: "Café", alt: "Café seating among plants at Swaada, Davanagere", tall: true },
+  { image: "/images/gallery-food-1.svg", category: "Food", alt: "Café food served at Swaada" },
+  { image: "/images/gallery-coffee-1.svg", category: "Coffee", alt: "Coffee served at Swaada café" },
+  { image: "/images/gallery-plants-1.svg", category: "Plants", alt: "Nursery plants and pots at Swaada", tall: true },
+  { image: "/images/gallery-outdoor-1.svg", category: "Outdoor", alt: "Outdoor green seating area at Swaada" },
+  { image: "/images/gallery-people-1.svg", category: "People", alt: "Guests relaxing at Swaada café" },
+  { image: "/images/gallery-evening-1.svg", category: "Evening", alt: "Evening ambience at Swaada on NH4", tall: true },
+  { image: "/images/gallery-plants-2.svg", category: "Plants", alt: "Green foliage inside the Swaada nursery café" },
+  { image: "/images/gallery-cafe-2.svg", category: "Café", alt: "A quiet café corner at Swaada, Davanagere" },
 ];
 
 /** Instagram-style grid */
 export const instaGrid = [
-  { image: "/images/story-small-a.jpg", alt: "Greenery at Swaada nursery café" },
-  { image: "/images/coffee-moment.jpg", alt: "Coffee moment at Swaada" },
-  { image: "/images/gallery-plants-1.jpg", alt: "Plants for sale at the nursery" },
-  { image: "/images/escape-food.jpg", alt: "Café food at Swaada Davanagere" },
-  { image: "/images/gallery-outdoor-1.jpg", alt: "Sunlit seating at Swaada" },
-  { image: "/images/escape-evening.jpg", alt: "Evening lights at Swaada café" },
+  { image: "/images/insta-1.svg", alt: "Greenery at Swaada nursery café" },
+  { image: "/images/insta-2.svg", alt: "Coffee moment at Swaada" },
+  { image: "/images/insta-3.svg", alt: "Plants for sale at the nursery" },
+  { image: "/images/insta-4.svg", alt: "Café food at Swaada Davanagere" },
+  { image: "/images/insta-5.svg", alt: "Sunlit seating at Swaada" },
+  { image: "/images/insta-6.svg", alt: "Evening lights at Swaada café" },
 ];
 
 /** Hero + section imagery */
 export const images = {
-  hero: "/images/hero.jpg",
-  storyLarge: "/images/story-large.jpg",
-  storySmallA: "/images/story-small-a.jpg",
-  storySmallB: "/images/story-small-b.jpg",
-  nursery: "/images/nursery.jpg",
-  coffeeMoment: "/images/coffee-moment.jpg",
+  hero: "/images/hero.svg",
+  storyLarge: "/images/story-large.svg",
+  storySmallA: "/images/story-small-a.svg",
+  storySmallB: "/images/story-small-b.svg",
+  nursery: "/images/nursery.svg",
+  coffeeMoment: "/images/coffee-moment.svg",
 };
 
 export const seo = {
