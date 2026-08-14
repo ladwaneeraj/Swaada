@@ -1,8 +1,8 @@
 import type { NextConfig } from "next";
 
-// Set BASE_PATH when the site is served from a sub-path
-// (e.g. GitHub Pages project site: BASE_PATH=/Swaada).
-const basePath = process.env.BASE_PATH ?? "";
+// Set NEXT_PUBLIC_BASE_PATH when the site is served from a
+// sub-path (e.g. GitHub Pages project site: /Swaada).
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 const nextConfig: NextConfig = {
   // Static export — the whole site is prerendered into ./out,
@@ -10,9 +10,10 @@ const nextConfig: NextConfig = {
   output: "export",
   basePath,
   images: {
-    // The static export has no image-optimizer server; images are
-    // already sized/compressed by scripts/fetch-images.mjs.
-    unoptimized: true,
+    // No image-optimizer server in a static export; the custom
+    // loader serves the pre-sized JPGs and prepends basePath.
+    loader: "custom",
+    loaderFile: "./src/lib/imageLoader.ts",
   },
 };
 

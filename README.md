@@ -22,7 +22,7 @@ The repo ships with `.github/workflows/deploy.yml`. One-time setup:
 3. Every push to `main` now builds and deploys automatically. The
    site appears at `https://<user>.github.io/Swaada/`.
 
-The workflow sets `BASE_PATH=/Swaada` because project pages are
+The workflow sets `NEXT_PUBLIC_BASE_PATH=/Swaada` because project pages are
 served from a sub-path. If you later attach a custom domain (repo
 Settings → Pages → Custom domain), remove that env line from the
 workflow and update `siteUrl` in `src/data/swaada.ts`. Note that on
@@ -32,7 +32,7 @@ where crawlers won't look for them — a custom domain fixes that.
 The build is a full static export (`output: "export"` in
 `next.config.ts`), so any static host works: Cloudflare Pages,
 Netlify, or Vercel (build command `npm run build`, output `out`;
-on hosts that serve from the domain root, don't set `BASE_PATH`).
+on hosts that serve from the domain root, don't set `NEXT_PUBLIC_BASE_PATH`).
 
 ## Editing content
 

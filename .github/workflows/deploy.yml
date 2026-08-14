@@ -28,7 +28,7 @@ jobs:
       - run: npm run build
         env:
           # Site is served from https://<user>.github.io/Swaada
-          BASE_PATH: /Swaada
+          NEXT_PUBLIC_BASE_PATH: /Swaada
       - run: touch out/.nojekyll
       - uses: actions/upload-pages-artifact@v3
         with:
